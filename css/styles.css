@@ -87,12 +87,15 @@ h2 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.1; letter-spacing: -.04
 .qualities span { font-size: 21px; color: #956a71; }
 .technology-heading { display: flex; justify-content: space-between; gap: 32px; align-items: end; }
 .technology-heading > p:last-child { max-width: 26ch; }
-.technology-groups { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 40px; }
+.technology-groups { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; }
 .technology-group { border-top: 1px solid var(--line); padding-top: 24px; min-width: 0; }
 .technology-group h3 { font-size: 12px; color: var(--muted); display: flex; gap: 18px; min-height: 42px; }
 .technology-group h3 span { color: var(--accent); font-family: Georgia, serif; }
 .technology-group ul { list-style: none; margin: 24px 0; padding: 0; }
 .technology-group li { font-size: clamp(25px, 3vw, 38px); line-height: 1.5; letter-spacing: -1px; }
+.technology-note { display: block; max-width: 38ch; margin-top: 6px; color: var(--muted); font: 13px/1.7 'Segoe UI', system-ui, sans-serif; letter-spacing: 0; }
+.technology-group li:has(.technology-note) { margin-bottom: 18px; }
+.technology-ai li { max-width: 20ch; }
 .technology-group > p { color: var(--muted); font-size: 12px; max-width: 28ch; }
 /* Each project is an editorial entry, not a dashboard card. */
 .projects-section { background: #252426; }
