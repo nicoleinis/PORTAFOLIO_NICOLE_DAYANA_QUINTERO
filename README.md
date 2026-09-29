@@ -1,6 +1,6 @@
 # Portfolio personal de Nicole
 
-One page de Nicole, Desarrolladora de Software en Formación en Campuslands. Presenta su perfil, tecnologías y tres proyectos para conectar con reclutadores y oportunidades de aprendizaje.
+One page de Nicole, Desarrolladora de Software en Formación en Campuslands. Presenta su perfil, tecnologías y seis proyectos para conectar con reclutadores y oportunidades de aprendizaje.
 
 ## Sitio web
 
@@ -14,7 +14,7 @@ Mostrar el proceso de formación de Nicole con una presentación profesional, ac
 
 Implementado exclusivamente con HTML5, CSS3 y JavaScript puro, sin frameworks ni dependencias externas. Incluye Flexbox, CSS Grid y media queries.
 
-El perfil presenta HTML5, CSS3, JavaScript, SQL, MySQL, Git, GitHub, JSON Server y TMDB API. Estas dos últimas tecnologías pertenecen a los proyectos presentados; este sitio estático no necesita claves API ni un servidor de datos.
+El perfil presenta HTML5, CSS3, JavaScript, Python, SQL, MySQL, Git, GitHub, JSON Server, TMDB API y fundamentos de Inteligencia Artificial con Python. Estas dos últimas tecnologías pertenecen a los proyectos presentados; este sitio estático no necesita claves API ni un servidor de datos.
 
 ## Estructura
 
@@ -40,7 +40,7 @@ portfolio/
 
 - Navegación por secciones, scroll suave y sección activa.
 - Menú móvil con estado accesible, cierre con Escape y manejo de foco.
-- Hero, sobre mí, nueve tecnologías, tres proyectos y contacto.
+- Hero, sobre mí, once tecnologías y conocimientos, seis proyectos y contacto.
 - Contenido y navegación disponibles incluso sin JavaScript.
 - Enlace para saltar al contenido, foco visible y respeto por movimiento reducido.
 - Proyectos editoriales con numeración grande, composiciones alternadas, institución, descripción y tecnologías. Sin imágenes de proyectos, enlaces privados ni botones sin acción.
@@ -74,7 +74,7 @@ GitHub Pages sirve la raíz de `main`. Todas las rutas internas son relativas y 
 
 ## Revisión
 
-Se revisaron destinos internos, archivos referenciados, estructura semántica, tres proyectos sin imágenes ni enlaces inactivos, un retrato con alt descriptivo y nueve tecnologías agrupadas. La sintaxis JavaScript y los eventos del menú se comprobaron mediante simulaciones de DOM (abrir, Escape, navegación, cambio de viewport y clic exterior). La comprobación HTTP de producción incluye HTML, CSS y JavaScript.
+Se revisaron destinos internos, archivos referenciados, estructura semántica, seis proyectos sin imágenes ni enlaces inactivos, un retrato con alt descriptivo y once tecnologías y conocimientos en cuatro grupos. La sintaxis JavaScript y los eventos del menú se comprobaron mediante simulaciones de DOM (abrir, Escape, navegación, cambio de viewport y clic exterior). La comprobación HTTP de producción incluye HTML, CSS y JavaScript.
 
 La revisión visual en navegador, la interacción real por teclado, el responsive y la consola requieren una sesión de navegador disponible. No se consideran comprobados solo por revisar el código.
 
@@ -85,6 +85,17 @@ Diseño editorial con carbón, blanco cálido y rosa empolvado. La tipografía c
 A 1050 px se reduce la separación y el texto personal pasa a una columna. A 760 px el Hero se apila, las tecnologías se muestran por grupos y los proyectos conservan número lateral. En móviles estrechos, los proyectos pasan a una sola columna. La imagen mantiene su proporción; las animaciones de entrada se desactivan con movimiento reducido.
 
 Se verificaron contenidos originales, destinos internos, archivos, cantidad de proyectos, imagen y sintaxis JavaScript. La revisión visual y de consola requiere un navegador conectado, no disponible durante este rediseño.
+## Proyectos presentados
+
+1. Batalla de Cartas — HTML, CSS y JavaScript.
+2. Sistema de Cine y Boletas — HTML, CSS, JavaScript, JSON Server y TMDB API.
+3. Sistema de Base de Datos — SQL y MySQL.
+4. Sistema de Gestión para Farmacia — Python 3.13; medicamentos, proveedores, pacientes, empleados, ventas, compras y 25 reportes.
+5. Actividad JavaScript — Fórmula 1 — lógica y datos en el navegador, arrays, objetos, búsquedas, filtros y relaciones mediante IDs.
+6. EduCampus LMS — gestión centralizada de cursos, usuarios, evaluaciones y reportes. No se atribuyen tecnologías sin confirmar.
+
+Los proyectos mantienen numeración y filas editoriales alternadas; no se publican enlaces a repositorios privados. El Hero, la fotografía y el detalle de código se conservan.
+
 ## Autor
 
 Nicole · Campuslands
