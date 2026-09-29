@@ -56,11 +56,11 @@ cd PORTAFOLIO_NICOLE_DAYANA_QUINTERO
 
 También puedes usar un servidor estático, por ejemplo la extensión Live Server de tu editor. No requiere instalación de dependencias ni compilación.
 
-## Personalización pendiente
+## Contacto y personalización
 
 No se inventaron datos de contacto ni enlaces de proyectos. En `index.html`:
 
-- Reemplaza los textos «Email / Pendiente de agregar» y «LinkedIn / Pendiente de agregar» por enlaces reales.
+- Email: [nicolequintero200@gmail.com](mailto:nicolequintero200@gmail.com). LinkedIn: [nicoleinis](https://www.linkedin.com/in/nicoleinis/). GitHub: [nicoleinis](https://github.com/nicoleinis).
 - Los repositorios de proyectos son privados. Cada tarjeta contiene un comentario HTML que indica dónde añadir un contenedor `.project-links` con enlaces públicos reales en el futuro. Los enlaces pueden reutilizar `.button` y `.secondary`. No añadas enlaces vacíos ni URLs privadas.
 - No se muestran imágenes en las secciones. Las ilustraciones anteriores permanecen archivadas en `assets/images/`, sin cargarse en la página; el favicon existente se conserva.
 - El enlace al perfil de GitHub corresponde al propietario del repositorio.
