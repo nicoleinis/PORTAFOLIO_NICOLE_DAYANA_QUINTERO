@@ -1,4 +1,4 @@
-﻿# Portfolio personal de Nicole
+# Portfolio personal de Nicole
 
 One page de Nicole, Desarrolladora de Software en Formación en Campuslands. Presenta su perfil, tecnologías y tres proyectos para conectar con reclutadores y oportunidades de aprendizaje.
 
@@ -42,7 +42,7 @@ portfolio/
 - Hero, sobre mí, nueve tecnologías, tres proyectos y contacto.
 - Contenido y navegación disponibles incluso sin JavaScript.
 - Enlace para saltar al contenido, foco visible y respeto por movimiento reducido.
-- Imágenes vectoriales locales, ligeras y escalables, con texto alternativo, dimensiones y carga diferida. Se usa SVG en lugar de WebP porque son ilustraciones geométricas originales, no fotografías.
+- Tarjetas de proyectos sin imágenes: institución Campuslands, descripción, tecnologías y hover discreto. Sin enlaces privados ni botones sin acción.
 - Sin fuentes, scripts, rastreadores ni bibliotecas de terceros.
 
 ## Ejecución local
@@ -61,8 +61,8 @@ También puedes usar un servidor estático, por ejemplo la extensión Live Serve
 No se inventaron datos de contacto ni enlaces de proyectos. En `index.html`:
 
 - Reemplaza los textos «Email / Pendiente de agregar» y «LinkedIn / Pendiente de agregar» por enlaces reales.
-- Reemplaza cada `span.pending-link` por un enlace `a` al repositorio o demo correspondiente, cuando esté disponible.
-- Las imágenes son ilustraciones conceptuales y están identificadas como tales; pueden reemplazarse por capturas reales optimizadas en WebP, conservando dimensiones y textos alternativos.
+- Los repositorios de proyectos son privados. Cada tarjeta contiene un comentario HTML que indica dónde añadir un contenedor `.project-links` con enlaces públicos reales en el futuro. Los enlaces pueden reutilizar `.button` y `.secondary`. No añadas enlaces vacíos ni URLs privadas.
+- No se muestran imágenes en las secciones. Las ilustraciones anteriores permanecen archivadas en `assets/images/`, sin cargarse en la página; el favicon existente se conserva.
 - El enlace al perfil de GitHub corresponde al propietario del repositorio.
 
 ## Git Flow y publicación
@@ -73,9 +73,13 @@ GitHub Pages sirve la raíz de `main`. Todas las rutas internas son relativas y 
 
 ## Revisión
 
-Se revisan destinos internos, archivos referenciados, textos alternativos, dimensiones de imágenes, carga diferida y estructura de secciones. La comprobación HTTP de producción incluye HTML, CSS, JavaScript e ilustraciones.
+Se revisaron destinos internos, archivos referenciados, estructura semántica, tres tarjetas sin imágenes ni enlaces inactivos y nueve tecnologías. La sintaxis JavaScript y los eventos del menú se comprobaron mediante simulaciones de DOM (abrir, Escape, navegación, cambio de viewport y clic exterior). La comprobación HTTP de producción incluye HTML, CSS y JavaScript.
 
 La revisión visual en navegador, la interacción real por teclado, el responsive y la consola requieren una sesión de navegador disponible. No se consideran comprobados solo por revisar el código.
+
+## Adaptación responsive
+
+Las tarjetas de proyectos usan una cuadrícula automática con ancho mínimo de 300 px limitado al espacio disponible. Las tecnologías pasan de tres a dos columnas y a una en pantallas muy estrechas. El menú cambia a navegación móvil a 760 px; sus enlaces mantienen áreas táctiles de al menos 44 px y el panel permite desplazamiento vertical en pantallas bajas. Las decoraciones del Hero quedan contenidas en su columna y los botones se apilan cuando falta espacio.
 
 ## Autor
 
