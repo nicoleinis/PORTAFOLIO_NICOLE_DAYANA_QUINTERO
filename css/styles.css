@@ -247,11 +247,12 @@ h2 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.1; letter-spacing: -.04
 }
 .hero-code pre {
   margin: 0;
+  font: 10px/1.6 ui-monospace, 'Cascadia Code', Consolas, monospace;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
 .hero-code code {
-  font: 10px/1.6 ui-monospace, 'Cascadia Code', Consolas, monospace;
+  font: inherit;
 }
 .hero-code .code-keyword { color: #ddb5b5; }
 .hero-code .code-string { color: #cfbfca; }
@@ -265,7 +266,7 @@ h2 { font-size: clamp(36px, 4.6vw, 64px); line-height: 1.1; letter-spacing: -.04
     margin-right: 18px;
     max-width: calc(100% - 18px);
   }
-  .hero-code code { font-size: 11px; }
+  .hero-code pre { font-size: 11px; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
