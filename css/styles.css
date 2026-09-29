@@ -218,7 +218,7 @@ h2{font-size:clamp(29px,3.2vw,42px);
   color:var(--muted)}
 .about-intro strong{color:var(--text);
   font-weight:500}
-.about-copy{font-size:14px;
+.about-copy{font-size:16px;
   color:var(--muted)}
 .about-copy p{margin-bottom:18px}
 .traits{display:flex;
@@ -233,7 +233,7 @@ h2{font-size:clamp(29px,3.2vw,42px);
 .section-tinted{background:#15151b;
   border-block:1px solid #222229}
 .tech-grid{display:grid;
-  grid-template-columns:repeat(5,1fr);
+  grid-template-columns:repeat(3,minmax(0,1fr));
   gap:14px}
 .tech-card{padding:23px;
   background:var(--surface);
@@ -242,11 +242,6 @@ h2{font-size:clamp(29px,3.2vw,42px);
 .tech-icon{font:700 23px/1.5 ui-monospace,Consolas,monospace;
   display:block;
   margin-bottom:15px}
-.orange{color:#f0ac91}
-.blue{color:#9fc6f3}
-.yellow{color:#e3d391}
-.purple{color:var(--accent)}
-.green{color:#a4d5ba}
 .tech-card h3{font-size:14px;
   margin:0 0 3px}
 .tech-card p{font-size:11px;
@@ -363,6 +358,38 @@ a.contact-item:hover>span{color:var(--accent)}
   color:var(--muted);
   margin:0}
 .footer .brand{font-size:24px}
+/* Typography and spacing build on the original dark / lavender palette. */
+.hero {
+  min-height: 660px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  padding-top: clamp(48px, 6vw, 88px);
+  gap: 40px;
+}
+.hero-greeting { margin-bottom: 4px; color: var(--muted); font-size: 18px; }
+h1 { margin-bottom: 16px; font-size: clamp(56px, 7vw, 88px); line-height: 1.05; letter-spacing: -3px; }
+.hero-role { margin-bottom: 24px; font-size: clamp(23px, 2.5vw, 32px); font-weight: 600; line-height: 1.35; letter-spacing: -.7px; }
+.hero-description { max-width: 52ch; font-size: 16px; line-height: 1.85; }
+.button { min-height: 48px; padding: 12px 22px; border: 1px solid transparent; border-radius: 9px; font-size: 14px; }
+.secondary { border-color: var(--border); }
+.secondary:hover { background: #24212d; border-color: #79698f; }
+.section { padding-block: clamp(64px, 7vw, 96px); }
+.section-heading { max-width: 740px; margin-bottom: 40px; }
+.section-heading > p:last-child:not(.eyebrow) { max-width: 62ch; font-size: 16px; line-height: 1.8; }
+.about-layout { grid-template-columns: minmax(0, .8fr) minmax(0, 1.3fr); gap: clamp(32px, 6vw, 80px); align-items: start; }
+.about-intro { padding: 24px 28px; border-left: 2px solid #79698f; background: linear-gradient(90deg, #c3afff08, transparent); border-radius: 0 12px 12px 0; }
+.about-intro p { font-size: 14px; margin-bottom: 0; }
+.about-copy { max-width: 65ch; font-size: 16px; line-height: 1.9; }
+.about-copy p { margin-bottom: 22px; }
+.traits span { font-size: 12px; padding: 6px 14px; }
+.tech-grid { gap: 16px; }
+.tech-card { min-width: 0; display: grid; grid-template-columns: 48px minmax(0, 1fr); column-gap: 16px; align-items: center; padding: 22px; border-radius: 12px; box-shadow: 0 4px 16px #00000010; }
+.tech-icon { display: grid; place-items: center; grid-row: 1 / 3; width: 48px; min-height: 48px; margin: 0; border: 1px solid #494052; border-radius: 10px; background: #c3afff08; color: var(--accent); font-size: 18px; }
+.tech-card h3 { margin: 0; font-size: 15px; }
+.tech-card p { font-size: 12px; }
+.contact-panel > p:not(.eyebrow) { font-size: 15px; }
+.contact-item { min-width: 0; overflow-wrap: anywhere; }
+.contact-item small, .contact-item > span { font-size: 13px; }
+.footer p, .footer > a:last-child { font-size: 12px; }
 @media(min-width:1500px){.hero{min-height:790px}
 }
 @media(max-width:1050px){.container{width:calc(100% - 48px)}
