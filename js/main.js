@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#navigation');
@@ -20,6 +20,7 @@ menuButton.addEventListener('click', () => {
 links.forEach(link => link.addEventListener('click', () => {
   closeMenu();
   const destination = document.querySelector(link.hash);
+  if (!destination) return;
   destination.setAttribute('tabindex', '-1');
   destination.focus({ preventScroll: true });
 }));
